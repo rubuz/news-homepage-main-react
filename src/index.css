@@ -7,3 +7,11 @@
 html {
   font-size: 15px;
 }
+
+.single-news-border-bottom {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.single-news-border-bottom:last-child {
+  border: none;
+}

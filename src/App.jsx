@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="font-inter">
       <Header />
-      <div className="max-w-[1440px] mx-auto p-4 grid grid-cols-[65%_1fr] gap-6">
+      <div className="max-w-[1440px] mx-auto p-4 grid grid-cols-[65%_1fr] gap-6 h-full">
         <Hero />
         <News />
       </div>
