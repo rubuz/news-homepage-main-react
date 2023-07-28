@@ -15,7 +15,9 @@ const Card = ({
       </div>
       {/* Text container */}
       <div className="flex flex-col justify-between">
-        <p className="text-grayish-blue text-3xl font-bold">{cardNumber}</p>
+        <p className="text-grayish-blue text-4xl sm:text-3xl font-bold">
+          {cardNumber}
+        </p>
         <h2 className="text-very-dark-blue font-bold text-lg hover:text-primary-orange duration-200 cursor-pointer">
           {cardTitle}
         </h2>
