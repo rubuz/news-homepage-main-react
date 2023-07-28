@@ -20,7 +20,7 @@ const NavbarMobile = () => {
       <div
         className={
           sideMenu
-            ? "bg-off-white z-20 fixed w-[320px] top-0 right-0 p-6 h-screen duration-200"
+            ? "bg-off-white z-20 fixed w-[60%] min-w-[250px] top-0 right-0 p-6 h-screen duration-200"
             : "bg-off-white z-20 fixed w-[320px] top-0 p-6 h-screen right-[-100%] duration-200"
         }
       >
