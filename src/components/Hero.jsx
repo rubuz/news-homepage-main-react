@@ -8,7 +8,7 @@ const Hero = () => {
         <img src={webImage} alt="" />
       </div>
       <div className="grid grid-cols-2 py-6 gap-4">
-        <h1 className="text-very-dark-blue font-extrabold text-5xl self-center">
+        <h1 className="text-very-dark-blue font-extrabold text-6xl self-center">
           The Bright Future of Web 3.0?
         </h1>
         <div className="self-center">
