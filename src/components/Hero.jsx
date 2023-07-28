@@ -1,13 +1,29 @@
-import React from "react";
-import webImage from "../assets/image-web-3-desktop.jpg";
+import React, { useEffect, useState } from "react";
+import desktopImage from "../assets/image-web-3-desktop.jpg";
+import mobileImage from "../assets/image-web-3-mobile.jpg";
 
 const Hero = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div>
       <div>
-        <img src={webImage} alt="" />
+        {windowWidth < 640 ? ( // Change the value 768 to your desired breakpoint for mobile
+          <img src={mobileImage} alt="Mobile Image" />
+        ) : (
+          <img src={desktopImage} alt="Desktop Image" />
+        )}
       </div>
-      <div className="grid grid-cols-2 py-6 gap-4">
+      <div className="grid sm:grid-cols-2 py-6 gap-4">
         <h1 className="text-very-dark-blue font-extrabold text-6xl self-center">
           The Bright Future of Web 3.0?
         </h1>

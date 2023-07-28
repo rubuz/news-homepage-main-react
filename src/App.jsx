@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="font-inter">
       <Header />
-      <div className=" mx-auto p-4 grid grid-cols-[65%_1fr] gap-6 h-full">
+      <div className="mx-auto p-4 grid grid-rows-[55%_min(500px)] gap-6 sm:grid-cols-[65%_1fr] sm:grid-rows-1">
         <Hero />
         <News />
       </div>
